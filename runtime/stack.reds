@@ -592,9 +592,8 @@ stack: context [										;-- call stack
 		return:   [red-value!]
 	][
 		#if debug? = yes [if verbose > 0 [print-line "stack/push"]]
-		
-		copy-cell value top
-		push*
+
+		copy-cell value push*
 	]
 	
 	pop: func [

@@ -50,6 +50,8 @@ Red [
 	]
 ]
 
+recycle/on
+
 ;-- command-line arguments processing
 
 #if config/dev-mode? [
