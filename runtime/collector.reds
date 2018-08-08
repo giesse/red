@@ -326,7 +326,7 @@ probe ["root size: " block/rs-length? root ", cycles: " stats/cycles]
 		
 		#if debug? = yes [if verbose > 1 [probe "sweeping..."]]
 		_hashtable/sweep ownership/table
-		collect-frames COLLECTOR_RELEASE
+		collect-frames COLLECTOR_DEFAULT
 
 		;-- unmark fixed series
 		unmark root/node
